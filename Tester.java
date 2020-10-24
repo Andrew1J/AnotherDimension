@@ -33,6 +33,10 @@ public class Tester {
         };
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
         if(ArrayOps.isRowMagic(C))System.out.println("C has row magic");
-        if(ArrayOps.isRowMagic(D))System.out.println("C has row magic");
+        if(ArrayOps.isRowMagic(D))System.out.println("D has row magic");
+        if(ArrayOps.isRowMagic(E))System.out.println("E has row magic");
+        if(ArrayOps.isColMagic(C))System.out.println("C has col magic");
+        if(ArrayOps.isColMagic(D))System.out.println("D has col magic");
+        if(ArrayOps.isColMagic(E))System.out.println("E has col magic");
     }
 }
