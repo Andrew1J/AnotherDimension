@@ -41,4 +41,14 @@ public class ArrayOps{
         }
         return colsums;
     }
+    public static boolean isRowMagic(int[][] matrix){
+        boolean res = true;
+        int[] rowsums = sumRows(matrix);
+        for(int i=0;i<rowsums.length-1;i++){
+            if(rowsums[i]!=rowsums[i+1]){
+                res = false;
+            }
+        }
+        return res;
+    }
 }
