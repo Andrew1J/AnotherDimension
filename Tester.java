@@ -31,6 +31,10 @@ public class Tester {
                     {2,2,2},
                     {2,2,2},
         };
+        int[][] F = {
+                    {2,4,2},
+                    {2,2,2},
+        };
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
         if(ArrayOps.isRowMagic(C))System.out.println("C has row magic");
         if(ArrayOps.isRowMagic(D))System.out.println("D has row magic");
@@ -38,5 +42,7 @@ public class Tester {
         if(ArrayOps.isColMagic(C))System.out.println("C has col magic");
         if(ArrayOps.isColMagic(D))System.out.println("D has col magic");
         if(ArrayOps.isColMagic(E))System.out.println("E has col magic");
+        System.out.println(ArrayOps.isLocationMagic(F,0,1));
+        System.out.println(ArrayOps.isLocationMagic(F,1,1));
     }
 }
