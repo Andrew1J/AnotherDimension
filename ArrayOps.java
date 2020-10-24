@@ -20,4 +20,11 @@ public class ArrayOps{
         }
         return sums;
     }
+    public static int[] largestInRows(int[][] matrix){
+        int[] large = new int[matrix.length];
+        for(int i=0;i<matrix.length;i++){
+            large[i] = largest(matrix[i]);
+        }
+        return large;
+    }
 }
